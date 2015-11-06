@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:id="@+id/btn_init_service"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detener"
+        android:id="@+id/btn_stop_service"
+        android:layout_below="@+id/btn_init_service"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solicitar"
+        android:id="@+id/btn_getValue_service"
+        android:layout_below="@+id/btn_stop_service"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_last_value_service"
+        android:layout_alignBottom="@+id/btn_getValue_service"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/btn_getValue_service"
+        android:layout_alignTop="@+id/btn_getValue_service" />
+</RelativeLayout>
